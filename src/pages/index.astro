@@ -4,14 +4,32 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <div style={{ width: 200, height: 100 }}>
+    <!-- <div style={{ width: 200, height: 100 }}>
       <div class="background-dots">a</div>
-    </div>
+    </div> -->
+    <body>
+      <p class="text-black">a</p>
+    </body>
   </main>
 </Layout>
 <!-- <div class="background-dots">a</div> -->
 
 <style>
+  body {
+  background: radial-gradient(circle, #f8f8f8, #e8e8e8) no-repeat, 
+              radial-gradient(circle at 20% 30%, rgba(200, 200, 200, 0.7), transparent 70%) no-repeat, 
+              conic-gradient(from 45deg, #ffffff, #e6e6e6, #d9d9d9, #ffffff) no-repeat;
+  background-blend-mode: multiply, overlay, soft-light;
+  background-size: 100% 100%, 400px 400px, 800px 800px;
+  background-repeat: repeat, no-repeat, repeat;
+  filter: blur(0.8px) contrast(1.1);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
   main {
     margin: auto;
     padding: 1rem;
